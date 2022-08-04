@@ -1,4 +1,6 @@
 https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+
+https://www.middlewareinventory.com/blog/ansible-playbook-example/
 ```
 [mysql-master]
 db01.pru-test.ins.perfios.com  ansible_host=172.17.48.143   ansible_ssh_port=1729   ansible_user=surajv  ansible_ssh_private_key_file=/home/suraj/.ssh/id_rsa
