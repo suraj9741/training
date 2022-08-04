@@ -1,0 +1,13 @@
+---
+- name: Network Getting Started First Playbook
+  hosts: all
+  become: true
+
+  tasks:
+          - name: update ubuntu
+            apt:
+                    name: "*"
+                    state: latest
+          - name: Run the equivalent of "apt-get update" as a separate step
+            apt:
+                    update_cache: yes
