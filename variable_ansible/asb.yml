@@ -1,0 +1,31 @@
+---
+- name: Network Getting Started First Playbook
+  hosts: all
+  become: true
+### variable declare in file
+  vars_files:
+          - /home/ubuntu/var_file.yml
+### variable declare here
+#  vars:
+#          filename: suraj.txt
+
+  tasks:
+          - name: update ubuntu
+            apt:
+                    name: "*"
+                    state: latest
+          - name: Run the equivalent of "apt-get update" as a separate step
+            apt:
+                    update_cache: yes
+          - name: Touch the same file, but add/remove some permissions
+            file:
+                    path: /home/ubuntu/demo/{{item}}
+                    state: touch
+            with_items: "{{ filename }}"
+          - name: get a hostname
+            command: hostname
+            register: hostname_output
+          - name: display hostname
+            debug:
+                    #msg: "{{hostname_output}}"
+                    msg: "{{hostname_output.stdout_lines}}"

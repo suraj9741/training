@@ -1,0 +1,73 @@
+	   vi var_file.yml
+  123  vi asb.yml
+  124  ansible-playbook -i hosts asb.yml
+  125  vi asb.yml
+  126  ansible-playbook -i hosts asb.yml
+  127  ls demo/
+  128  vi asb.yml
+  129  ls
+  130  pwd
+  131  vi asb.yml
+  132  ansible-playbook -i hosts asb.yml
+  133  ls demo/
+  134  vi hosts
+  135  vi asb.yml
+  136  ansible-playbook -i hosts asb.yml
+  137  ls demo/
+  138  vi hosts
+  139  ansible-playbook -i hosts filename=runtime.txt asb.yml
+  140  ansible-playbook -i hosts --extra-vars "filename=runtime.txt" asb.yml
+  141  ls demo
+  142  ls
+  143  vi var_file.yml
+  144  ansible-playbook -i hosts --extra-vars "filename=runtime.txt" asb.yml
+  145  ls demo/
+  146  rm -rf demo/
+  147  ls
+  148  mkdir demo
+  149  ls
+  150  ls demo/
+  151  vi asb.yml
+  152  ansible-playbook -i hosts asb.yml
+  153  ls demo/
+  154  ll demo/
+  155  cd demo/
+  156  rm demo
+  157  rm \[\'host.txt\'\,\ \'runtime.txt\'\,\ \'suraj.txt\'\,\ \'test.conf\'\,\ \'uma.txt\'\,\ \'new.txt\'\] \[\'host.txt\'\,\ \'runtime.txt\'\,\ \'suraj.txt\'\,\ \'test.conf\'\,\ \'uma.txt\'\,\ \'new.txt\'\]
+  158  ls
+  159  rm \[\'host.txt\'\,\ \'runtime.txt\'\,\ \'suraj.txt\'\,\ \'test.conf\'\,\ \'uma.txt\'\,\ \'new.txt\'\]
+  160  ls
+  161  cd ..
+  162  ls demo/
+  163  vi asb.yml
+  164  ansible-playbook -i hosts asb.yml
+  165  vi asb.yml
+  166  ansible-playbook -i hosts asb.yml
+  167  ls demo/
+  168  ll demo/
+  169  ll
+  170  cd .ansible/
+  171  ls
+  172  cd tmp/
+  173  ls
+  174  cd ..
+  175  cd cp/
+  176  ls
+  177  ll
+  178  cd ..
+  179  cd te
+  180  cd tmp/
+  181  ll
+  182  cd ..\
+  183  cd ..
+  184  cd
+  185  vi asb.yml
+  186  ansible-playbook -i hosts asb.yml
+  187  vi asb.yml
+  188  ansible-playbook -i hosts asb.yml
+  189  vi asb.yml
+  190  ansible-playbook -i hosts asb.yml
+  191  sudo hostnamectl uma.budbuda.com
+  192  sudo hostnamectl set-hostname uma.budbuda.com
+  193  ansible-playbook -i hosts asb.yml
+
