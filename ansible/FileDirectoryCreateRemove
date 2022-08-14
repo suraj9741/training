@@ -1,0 +1,30 @@
+#Create a file a file and remove
+---
+  - hosts: all
+    become: yes
+
+    tasks:
+           - name: Create a file and Remove
+             file:
+               path: /home/ubuntu/learning/a.txt
+               state: touch
+
+            - name: Remove a file
+              file:
+                path: /home/ubuntu/learning/a.txt
+                state: absent
+
+#Create a folder and remove
+
+
+           - name: Create a folder and Remove
+             file:
+               path: /home/ubuntu/Test
+               state: directory
+
+           - name: Remove a file
+             file:
+               path: /home/ubuntu/Test
+               state: absent
+
+
